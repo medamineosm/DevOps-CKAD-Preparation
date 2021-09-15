@@ -9,18 +9,18 @@
 	 - #### By YAML
 ```yaml
 # pod.yml
-		apiVersion: v1
-		kind: Pod
-		metadata:
-			namespace: mynamespace
-			name: pod-name
-		spec:
-			containers
-			- name: nginx:latest
-			  command: ['nginx']
-			  args: ['-g','daemon;']
-			  ports:
-			  - containerPort: 80
+apiVersion: v1
+kind: Pod
+metadata:
+	namespace: mynamespace
+	name: pod-name
+spec:
+	containers
+	- name: nginx:latest
+	  command: ['nginx']
+	  args: ['-g','daemon;']
+	  ports:
+	  - containerPort: 80
 ```
 
 		- kubectl apply -f pod.yml 
